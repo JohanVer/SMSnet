@@ -1,7 +1,7 @@
 # SMSnet
 Model-evaluator of Publication : "SMSnet: Semantic Motion Segmentation using Deep Convolutional Neural Networks"
 
-VIDEO
+Video: https://www.youtube.com/watch?v=oTL7l7ZuQpM
 
 ## Models
 The models can be downloaded here:
