@@ -5,7 +5,7 @@ VIDEO
 
 ## Models
 The models can be downloaded here:
-This repo contains the models trained on City-Kitti-Motion using EFS and without EFS
+This repo contains the models trained on City-Kitti-Motion using EFS and without EFS on inf range
 - Link1 (With EFS)
 - Link2 (Without EFS)
 
