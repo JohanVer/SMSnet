@@ -6,30 +6,30 @@ VIDEO
 ## Models
 The models can be downloaded here:
 This repo contains the models trained on City-Kitti-Motion using EFS and without EFS
-Link1 (With EFS)
-Link2 (Without EFS)
+-Link1 (With EFS)
+-Link2 (Without EFS)
 
 ## Test databases
 The databases can be downloaded here:
-Link1 (Cityscapes test images)
-Link2 (KITTI test images)
+-Link1 (Cityscapes test images)
+-Link2 (KITTI test images)
 
 Each compressed archiv includes 8 lmdb databases:
 
 Labels:
-IMAGES_LMDB0: Labels with 20m range
-IMAGES_LMDB1: Labels with 40m range
-IMAGES_LMDB2: Labels with 60m range
-LABELS_LMDB:  Labels with inf range
+-IMAGES_LMDB0: Labels with 20m range
+-IMAGES_LMDB1: Labels with 40m range
+-IMAGES_LMDB2: Labels with 60m range
+-LABELS_LMDB:  Labels with inf range
 
 Images:
-IMAGES_LMDB3: Left image corresponding to label
-IMAGES_LMDB4: Previous left image
+-IMAGES_LMDB3: Left image corresponding to label
+-IMAGES_LMDB4: Previous left image
 
 Flow:
 Note: The flow is centered at 128 and scaled by 1/6.4 in order to fit into the UC1 LMDB format
-IMAGES_LMDB5: Flow with EFS 
-IMAGES_LMDB6: Flow
+-IMAGES_LMDB5: Flow with EFS 
+-IMAGES_LMDB6: Flow
 
 ## Prerequisites
 1. Caffe
