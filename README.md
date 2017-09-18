@@ -3,7 +3,7 @@ Model-evaluator of Publication : "SMSnet: Semantic Motion Segmentation using Dee
 
 VIDEO
 
-##Models:
+## Models
 The models can be downloaded here:
 This repo contains the models trained on City-Kitti-Motion using EFS and without EFS
 Link1 (With EFS)
@@ -31,14 +31,14 @@ Note: The flow is centered at 128 and scaled by 1/6.4 in order to fit into the U
 IMAGES_LMDB5: Flow with EFS 
 IMAGES_LMDB6: Flow
 
-##Prerequisites:
+## Prerequisites
 1. Caffe
 2. CUDA
 3. OPENCV
 4. HDF5
 5. PROTOBUF
 
-##How to use:
+## How to use
 1. Clone repo : "git clone https://github.com/JohanVer/SMSnet.git"
 2. Go to folder and create build dir: "cd SMSnet && mkdir build && mkdir datasets && mkdir models"
 3. Download KITTI dataset from the provided link and extract it into "datasets"
