@@ -29,10 +29,10 @@ std::vector<std::string> output_layer_names;
 
 flow_color_coder flow_coder;
 
-const bool display_mode = true;
+const bool display_mode = false;
 
 const std::string model_file   = "../model_description/deploy_2class_kitti.prototxt";
-const std::string trained_file = "../models/city_kitti_efs.caffemodel";
+const std::string trained_file = "../models/city_kitti_efs_inf.caffemodel";
 
 const bool is_not_txt = true;
 

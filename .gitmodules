@@ -1,0 +1,3 @@
+[submodule "extern/caffe"]
+	path = extern/caffe
+	url = https://github.com/BVLC/caffe.git
