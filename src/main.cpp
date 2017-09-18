@@ -29,14 +29,23 @@ std::vector<std::string> output_layer_names;
 
 flow_color_coder flow_coder;
 
-const bool display_mode = false;
+// If you just want to evaluate IOU values, set display_mode to false
+const bool display_mode = true;
 
+// NOTE: If you want to change from kitti to the city dataset comment all lines marked with KITTI and uncomment all lines marked with CITY
+
+// KITTI
 const std::string model_file   = "../model_description/deploy_2class_kitti.prototxt";
 const std::string trained_file = "../models/city_kitti_efs_inf.caffemodel";
 
+//CITY
+//const std::string model_file   = "../model_description/deploy_2class_city.prototxt";
+//const std::string trained_file = "../models/city_kitti_efs_40.caffemodel";
+
 const bool is_not_txt = true;
 
-const std::string labels_paths_file = "../datasets/kitti/labels_lmdb";
+const std::string labels_paths_file = "../datasets/kitti/labels_lmdb"; // KITTI
+//const std::string labels_paths_file = "../datasets/city/images_lmdb1"; // CITY
 
 const std::string color_mapping_file = "";
 
@@ -46,10 +55,12 @@ int number_input_images;
 void setupVars(){
     // Images
     // First has to correspond to label
-    images_paths_file.push_back("../datasets/kitti/images_lmdb3");
+    images_paths_file.push_back("../datasets/kitti/images_lmdb3"); // KITTI
+    //images_paths_file.push_back("../datasets/city/images_lmdb3"); // CITY
     
     // Flow (either ego-flow subtracted or raw flow) In the LMDB Databases the flow is scaled by 1/6.4 and centered at 128 to fit in the unsigned char format
-    images_paths_file.push_back("../datasets/kitti/images_lmdb5");
+    images_paths_file.push_back("../datasets/kitti/images_lmdb5"); // KITTI
+    //images_paths_file.push_back("../datasets/city/images_lmdb5"); // CITY
 
     // Mean file assignment
     mean_files[0] = "../mean/mean.binaryproto";

@@ -5,7 +5,7 @@ VIDEO
 
 ## Models
 The models can be downloaded here:
-This repo contains the models trained on City-Kitti-Motion using EFS and without EFS on inf range
+This repo contains the models trained on City-Kitti-Motion using EFS and without EFS on inf range and 40m range
 - Link1 (With EFS)
 - Link2 (Without EFS)
 
@@ -53,10 +53,11 @@ This repo comes with a modified version of caffe
 4. Download Models and extract them into "models"
 4. Go to build folder: "cd build"
 5. Compile: "cmake .." then "make"
-6. run program : "./caffe_test_ex"
+6. run program : "./caffe_test_ex" . The network and the KITTI database should load. The network predictions and the GT is visualized. To get the next prediction just press Enter.
+   If you want to change the Dataset take a look in the code (main.cpp)
 
 ## Troubleshooting
-If you get : "caffe/proto/caffe.pb.h: No such file or directory" try to go in your caffe dir and type:
+If you get : "caffe/proto/caffe.pb.h: No such file or directory" try to go in your caffe dir (extern/modcaffe) and type:
 1. protoc src/caffe/proto/caffe.proto --cpp_out=.
 2. mkdir include/caffe/proto
 3. mv src/caffe/proto/caffe.pb.h include/caffe/proto
