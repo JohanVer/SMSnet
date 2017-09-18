@@ -61,3 +61,47 @@ If you get : "caffe/proto/caffe.pb.h: No such file or directory" try to go in yo
 1. protoc src/caffe/proto/caffe.proto --cpp_out=.
 2. mkdir include/caffe/proto
 3. mv src/caffe/proto/caffe.pb.h include/caffe/proto
+
+# Cite
+If you use this code or the datasets please make sure that you cite the following papers:
+
+~~~~ 
+@InProceedings{Vertens17Icra,
+author = {Johan Vertens, Abhinav Valada and Wolfram Burgard},
+title = {SMSnet: Semantic Motion Segmentation
+using Deep Convolutional Neural Networks},
+year = 2017,
+month = sept,
+url = {todo},
+address = {Vancouver, Canada}
+}
+~~~~
+
+~~~~
+@article{DBLP:journals/corr/CordtsORREBFRS16,
+  author    = {Marius Cordts and
+               Mohamed Omran and
+               Sebastian Ramos and
+               Timo Rehfeld and
+               Markus Enzweiler and
+               Rodrigo Benenson and
+               Uwe Franke and
+               Stefan Roth and
+               Bernt Schiele},
+  title     = {The Cityscapes Dataset for Semantic Urban Scene Understanding},
+  journal   = {CoRR},
+  volume    = {abs/1604.01685},
+  year      = {2016},
+  url       = {http://arxiv.org/abs/1604.01685},
+  timestamp = {Wed, 07 Jun 2017 14:41:02 +0200},
+  biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/CordtsORREBFRS16},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+~~~~
+@ARTICLE{Geiger2013IJRR,
+  author = {Andreas Geiger and Philip Lenz and Christoph Stiller and Raquel Urtasun},
+  title = {Vision meets Robotics: The KITTI Dataset},
+  journal = {International Journal of Robotics Research (IJRR)},
+  year = {2013}
+}
+~~~~
