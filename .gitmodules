@@ -1,3 +1,9 @@
 [submodule "extern/caffe"]
 	path = extern/caffe
 	url = https://github.com/BVLC/caffe.git
+[submodule "extern/--name"]
+	path = extern/--name
+	url = https://github.com/JohanVer/caffe.git
+[submodule "extern/modcaffe"]
+	path = extern/modcaffe
+	url = https://github.com/JohanVer/caffe.git

@@ -39,6 +39,14 @@ Note: The flow is centered at 128 and scaled by 1/6.4 in order to fit into the U
 5. PROTOBUF
 
 ## How to use
+
+### Build caffe
+This repo comes with a modified version of caffe
+1. Go into extern/modcaffe
+2. Create a build folder "mkdir build && cd build"
+3. Compile: "cmake .." then "make -j8"
+
+### SMSnet evaluator
 1. Clone repo : "git clone https://github.com/JohanVer/SMSnet.git"
 2. Go to folder and create build dir: "cd SMSnet && mkdir build && mkdir datasets && mkdir models"
 3. Download KITTI dataset from the provided link and extract it into "datasets"
