@@ -98,6 +98,7 @@ address = {Vancouver, Canada}
   bibsource = {dblp computer science bibliography, http://dblp.org}
 }
 ~~~~
+~~~~
 @ARTICLE{Geiger2013IJRR,
   author = {Andreas Geiger and Philip Lenz and Christoph Stiller and Raquel Urtasun},
   title = {Vision meets Robotics: The KITTI Dataset},
