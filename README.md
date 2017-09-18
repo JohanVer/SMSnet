@@ -1,6 +1,7 @@
 # SMSnet
 Model-evaluator of Publication : "SMSnet: Semantic Motion Segmentation using Deep Convolutional Neural Networks"
 
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/oTL7l7ZuQpM/0.jpg)](https://www.youtube.com/watch?v=oTL7l7ZuQpM)
 Video: https://www.youtube.com/watch?v=oTL7l7ZuQpM
 
 ## Models
@@ -72,7 +73,7 @@ title = {SMSnet: Semantic Motion Segmentation
 using Deep Convolutional Neural Networks},
 year = 2017,
 month = sept,
-url = {todo},
+url = {https://github.com/JohanVer/SMSnet},
 address = {Vancouver, Canada}
 }
 ~~~~
