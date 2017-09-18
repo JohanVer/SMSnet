@@ -18,8 +18,6 @@
 #include "../include/flow_color_coder.h"
 #include "../include/hdf5_reader.h"
 
-//#define STATIC_BIG_CLASS
-
 cv::Mat createDisparityChange(const cv::Mat &disp1, const cv::Mat &disp2, const cv::Mat &flow);
 
 std::map<unsigned char, cv::Vec3b> net_colors_;
@@ -33,12 +31,12 @@ flow_color_coder flow_coder;
 
 const bool display_mode = true;
 
-const std::string model_file   = "/home/vertensj/iros_deploy/motion/deploy_2class_kitti.prototxt";
-const std::string trained_file = "/home/vertensj/deepmotion/caffe_software/caffe/models/iRos17/motion/city_kitti/2_class/80/best45k.caffemodel";
+const std::string model_file   = "../model_description/deploy_2class_kitti.prototxt";
+const std::string trained_file = "../models/city_kitti_efs.caffemodel";
 
 const bool is_not_txt = true;
 
-const std::string labels_paths_file = "/home/vertensj/final_datasets/iRos_datasets/motion_test/kitti/kitti_motion_test/labels_lmdb";
+const std::string labels_paths_file = "../datasets/kitti/labels_lmdb";
 
 const std::string color_mapping_file = "";
 
@@ -48,13 +46,13 @@ int number_input_images;
 void setupVars(){
     // Images
     // First has to correspond to label
-    images_paths_file.push_back("/home/vertensj/final_datasets/iRos_datasets/motion_test/kitti/kitti_motion_test/images_lmdb3");
+    images_paths_file.push_back("../datasets/kitti/images_lmdb3");
     
     // Flow (either ego-flow subtracted or raw flow) In the LMDB Databases the flow is scaled by 1/6.4 and centered at 128 to fit in the unsigned char format
-    images_paths_file.push_back("/home/vertensj/final_datasets/iRos_datasets/motion_test/kitti/kitti_motion_test/images_lmdb5");
+    images_paths_file.push_back("../datasets/kitti/images_lmdb5");
 
     // Mean file assignment
-    mean_files[0] = "/home/vertensj/final_datasets/iRos_datasets/motion_train/city_kitti_cars_motion//mean3.binaryproto";
+    mean_files[0] = "../mean/mean.binaryproto";
 
     // Requested layer names (first has to correspond to label)
     output_layer_names.push_back("out");
