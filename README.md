@@ -46,3 +46,9 @@ Note: The flow is centered at 128 and scaled by 1/6.4 in order to fit into the U
 4. Go to build folder: "cd build"
 5. Compile: "cmake .." then "make"
 6. run program : "./caffe_test_ex"
+
+## Troubleshooting
+If you get : "caffe/proto/caffe.pb.h: No such file or directory" try to go in your caffe dir and type:
+1. protoc src/caffe/proto/caffe.proto --cpp_out=.
+2. mkdir include/caffe/proto
+3. mv src/caffe/proto/caffe.pb.h include/caffe/proto
