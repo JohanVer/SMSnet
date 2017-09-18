@@ -4,15 +4,13 @@ Model-evaluator of Publication : "SMSnet: Semantic Motion Segmentation using Dee
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/oTL7l7ZuQpM/0.jpg)](https://www.youtube.com/watch?v=oTL7l7ZuQpM)
 
 ## Models
-The models can be downloaded here:
-This repo contains the models trained on City-Kitti-Motion using EFS and without EFS on inf range and 40m range
-- Link1 (With EFS)
-- Link2 (Without EFS)
+The models can be downloaded here: [Models](http://aisdatasets.informatik.uni-freiburg.de/smsnet/models.tar.gz)
+This link contains the models trained on City-Kitti-Motion using EFS and without EFS on inf range and 40m range
 
 ## Test databases
 The databases can be downloaded here:
-- Link1 (Cityscapes test images)
-- Link2 (KITTI test images)
+- [KITTI Test Dataset](http://aisdatasets.informatik.uni-freiburg.de/smsnet/datasets/kitti.tar.gz)
+- [Cityscapes Test Dataset](http://aisdatasets.informatik.uni-freiburg.de/smsnet/datasets/city.tar.gz)
 
 Each compressed archiv includes 8 lmdb databases:
 
@@ -30,6 +28,9 @@ Flow:
 Note: The flow is centered at 128 and scaled by 1/6.4 in order to fit into the UC1 LMDB format
 - IMAGES_LMDB5: Flow with EFS 
 - IMAGES_LMDB6: Flow
+
+### Raw Annotations
+The full moving car/ static car annotations for the training and validation sets can be downloaded here: [Annotations](http://aisdatasets.informatik.uni-freiburg.de/smsnet/cityscapes_motion_labels.tar.gz)
 
 ## Prerequisites
 1. Caffe
