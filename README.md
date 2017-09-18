@@ -42,15 +42,15 @@ Note: The flow is centered at 128 and scaled by 1/6.4 in order to fit into the U
 
 ### Build caffe
 This repo comes with a modified version of caffe
-1. Go into extern/modcaffe
-2. Create a build folder "mkdir build && cd build"
-3. Compile: "cmake .." then "make -j8"
+1. Clone repo
+2. Go into extern/modcaffe
+3. Create a build folder "mkdir build && cd build"
+4. Compile: "cmake .." then "make -j8"
 
 ### SMSnet evaluator
-1. Clone repo : "git clone https://github.com/JohanVer/SMSnet.git"
-2. Go to folder and create build dir: "cd SMSnet && mkdir build && mkdir datasets && mkdir models"
-3. Download KITTI dataset from the provided link and extract it into "datasets"
-4. Download Models and extract them into "models"
+1. Go to repo and create build dir: "mkdir build && mkdir datasets && mkdir models"
+2. Download KITTI dataset from the provided link and extract it into "datasets"
+3. Download Models and extract them into "models"
 4. Go to build folder: "cd build"
 5. Compile: "cmake .." then "make"
 6. run program : "./caffe_test_ex" . The network and the KITTI database should load. The network predictions and the GT is visualized. To get the next prediction just press Enter.
@@ -98,6 +98,7 @@ address = {Vancouver, Canada}
   bibsource = {dblp computer science bibliography, http://dblp.org}
 }
 ~~~~
+
 ~~~~
 @ARTICLE{Geiger2013IJRR,
   author = {Andreas Geiger and Philip Lenz and Christoph Stiller and Raquel Urtasun},
