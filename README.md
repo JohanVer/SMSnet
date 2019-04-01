@@ -30,7 +30,7 @@ Note: The flow is centered at 128 and scaled by 1/6.4 in order to fit into the U
 - IMAGES_LMDB6: Flow
 
 ### Raw Annotations
-The full moving car/ static car annotations for the training and validation sets can be downloaded here: <!---[Annotations](http://aisdatasets.informatik.uni-freiburg.de/smsnet/cityscapes_motion_labels.tar.gz) --->
+The full moving car/ static car annotations for the training and validation sets can be downloaded here: <!---- [Annotations](http://aisdatasets.informatik.uni-freiburg.de/smsnet/cityscapes_motion_labels.tar.gz) --->
 
 ## Prerequisites
 1. Caffe
